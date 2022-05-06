@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply text-white bg-black font-[Montserrat];
+  }
+}
+
+@layer utilities {
+  .noise {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    transition: 1s ease-out;
+  }
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), transparent), linear-gradient(to top, #121212 20%, transparent);
+    transition: 1s ease-out;
+  }
+}
+
+/**
+ * ==================================================
+ * Popover Component Styles Overrides
+ * ==================================================
+ *
+ */
+.v-popper__wrapper {
+  @apply max-w-[360px];
+}
+
+.v-popper__inner {
+  @apply !bg-[#242424] !py-3 !px-2.5 shadow-xl;
+}
+
+.v-popper__inner div {
+  @apply text-sm;
+}
+
+.v-popper__arrow-container {
+  @apply !hidden;
+}
