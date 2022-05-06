@@ -10,9 +10,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.6.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "floating-vue": "^2.0.0-beta.16",
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue-slider-component": "^4.0.0-beta.4"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
