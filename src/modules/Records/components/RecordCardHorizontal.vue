@@ -25,9 +25,9 @@ const props = defineProps({
   },
   type: {
     type: String,
-    required: true,
+    default: "playlist",
     validator(value: string) {
-      return ["playslist", "album"].includes(value);
+      return ["playlist", "album", "artist", "episode"].includes(value);
     },
   },
 });
